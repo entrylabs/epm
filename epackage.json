@@ -1,0 +1,6 @@
+{
+    "dependency": {
+        "@entrylabs/modal": "^1.2.4",
+        "react": "^16.12.0"
+    }
+}
