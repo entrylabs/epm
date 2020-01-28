@@ -5,7 +5,6 @@ const path = require("path");
 const fse = require("fs-extra");
 const { spawn } = require("child_process");
 const package = require("./package.json");
-const { dependency } = require("./epackage.json");
 const store = path.join(process.env.HOME, ".epm", "node_modules");
 
 program
@@ -49,6 +48,7 @@ async function install(args, dest = program.dir) {
 }
 
 async function setup() {
+  const { dependency } = require(path.join(process.cwd(), "epackage.json"));
   const pkgs = Object.entries(dependency).map(([key, value]) => {
     return `${key}@${value}`;
   });
