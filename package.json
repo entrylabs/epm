@@ -1,6 +1,6 @@
 {
   "name": "@entrylabs/epm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> Install the npm package wherever you want.",
   "main": "index.js",
   "bin": {
