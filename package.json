@@ -1,15 +1,30 @@
 {
-  "name": "epm",
+  "name": "@entrylabs/epm",
   "version": "0.0.1",
   "description": "> Install the npm package wherever you want.",
   "main": "index.js",
+  "bin": {
+    "epm": "index.js"
+  },
+  "prefreGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kimorkim@gmail.com",
+  "keywords": [
+    "package"
+  ],
   "license": "MIT",
   "dependencies": {
     "commander": "^4.1.0",
     "fs-extra": "^8.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entrylabs/epm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/entrylabs/epm/issues"
+  },
+  "homepage": "https://github.com/entrylabs/epm#readme"
 }
