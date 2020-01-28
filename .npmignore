@@ -1,4 +1,4 @@
-./coverage
-./node_modules
-./epackage.json
-./package-lock.json
+coverage
+node_modules
+epackage.json
+package-lock.json
