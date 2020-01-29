@@ -1,4 +1,5 @@
 # epm
+
 Install the npm package wherever you want
 
 ## Installation
@@ -22,9 +23,27 @@ Options:
   -h, --help        output usage information
 
 Commands:
-  install           Install the npm package at the desired location.
-  i                 Install the npm package at the desired location.
+  install           Install the npm package.
+  i                 Install the npm package.
 ```
+
+## Use epackage.json
+
+If the package.json exists in the location where the epm runs, the package corresponding to the package.json is installed.
+
+```json
+{
+  "directory": "<path>",
+  "dependency": {
+    "react": "16.12.0"
+  }
+}
+```
+
+- directory
+  - Location of packages to be installed
+- dependency
+  - List of packages to install
 
 ## License
 

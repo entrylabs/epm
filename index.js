@@ -48,11 +48,11 @@ async function install(args, dest = program.dir) {
 }
 
 async function setup() {
-  const { dependency } = require(path.join(process.cwd(), "epackage.json"));
+  const { dependency, directory } = require(path.join(process.cwd(), "epackage.json"));
   const pkgs = Object.entries(dependency).map(([key, value]) => {
     return `${key}@${value}`;
   });
-  await install(["i", ...pkgs, "--prefix", "~/.epm"]);
+  await install(["i", ...pkgs, "--prefix", "~/.epm"], directory);
 }
 
 async function main(cmd, ...pkgs) {
