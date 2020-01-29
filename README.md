@@ -34,7 +34,7 @@ If the package.json exists in the location where the epm runs, the package corre
 ```json
 {
   "directory": "<path>",
-  "dependency": {
+  "dependencies": {
     "react": "16.12.0"
   }
 }
@@ -42,7 +42,7 @@ If the package.json exists in the location where the epm runs, the package corre
 
 - directory
   - Location of packages to be installed
-- dependency
+- dependencies
   - List of packages to install
 
 ## License
